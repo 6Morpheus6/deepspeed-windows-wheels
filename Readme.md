@@ -40,10 +40,17 @@ DeepSpeed will still work for all regular training and inference tasks.
   - Create Environment: `python -m venv env`
   - Activate Environment: `env\Scripts\activate`
 - 3.) **Pytorch 2.7.0+cu128**
-  - Install pytorch with pip:  
-  ```pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128```
-  - Or install with uv:  
-  ```uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128```
+  - Install pytorch with pip:
+  
+  ```bash
+  pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+  ```
+
+  - Or install with uv:
+  
+  ```bash
+  uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+  ```
 
 ---
 
