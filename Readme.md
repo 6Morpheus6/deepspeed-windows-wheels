@@ -14,9 +14,9 @@ Official DeepSpeed repository: [https://github.com/deepspeedai/DeepSpeed](https:
 
 > ⚠ Windows Notice:
 You may see warnings like
-LINK : fatal error LNK1181: cannot open file "aio.lib"
-LINK : fatal error LNK1181: cannot open file 'cufile.lib'
-This is normal on systems without the full CUDA Toolkit.
+LINK : fatal error LNK1181: cannot open file "aio.lib"  
+LINK : fatal error LNK1181: cannot open file 'cufile.lib'  
+This is normal on systems without the full CUDA Toolkit.  
 DeepSpeed will still work for all regular training and inference tasks.
 
 ---
