@@ -13,7 +13,7 @@ These wheels are provided to simplify DeepSpeed installation on Windows without 
 Official DeepSpeed repository: [https://github.com/deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed)
 
 > ⚠ Windows Notice:
-You may see warnings like
+You may see warnings like  
 LINK : fatal error LNK1181: cannot open file "aio.lib"  
 LINK : fatal error LNK1181: cannot open file 'cufile.lib'  
 This is normal on systems without the full CUDA Toolkit.  
