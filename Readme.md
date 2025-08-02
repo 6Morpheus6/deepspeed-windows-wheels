@@ -12,6 +12,13 @@ Built with **pytorch 2.7.0+cu128**
 These wheels are provided to simplify DeepSpeed installation on Windows without manual building.  
 Official DeepSpeed repository: [https://github.com/deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed)
 
+> ⚠ Windows Notice:
+You may see warnings like
+LINK : fatal error LNK1181: cannot open file "aio.lib"
+LINK : fatal error LNK1181: cannot open file 'cufile.lib'
+This is normal on systems without the full CUDA Toolkit.
+DeepSpeed will still work for all regular training and inference tasks.
+
 ---
 
 ## 🖥️ Requirements
