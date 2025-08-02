@@ -47,30 +47,30 @@ DeepSpeed will still work for all regular training and inference tasks.
 
 ## 📦 Installation
 
-Search the appropriate `.whl` file for your python version from the [Releases](https://github.com/6Morpheus6/releases) page.
+Search the appropriate `.whl` file for your python version from the [Releases](https://github.com/6Morpheus6/deepspeed-windows-wheels/releases) page.
 
 ### Install it with pip
 
 ```bash
-pip install https://github.com/6Morpheus6/releases/downloads/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
 ```
 
 **For Example:**
 
 ```bash
-pip install https://github.com/6Morpheus6/releases/downloads/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
 ```
 
 ### Or install with uv
 
 ```bash
-uv pip install https://github.com/6Morpheus6/releases/downloads/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
 ```
 
 **For Example:**
 
 ```bash
-uv pip install https://github.com/6Morpheus6/releases/downloads/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
 ```
 
 ### ⭐ Support
