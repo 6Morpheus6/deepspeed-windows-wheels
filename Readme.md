@@ -2,7 +2,7 @@
 
 Prebuilt **DeepSpeed** wheels for **Windows** with **NVIDIA GPU support**.  
 Supports **Python 3.9 – 3.12** and **GTX 10** - **RTX 50** series.
-Built with **pytorch 2.7.0+cu128**  
+Compiled with **pytorch 2.7, 2.8 and cuda 128**  
 > “The wheels already include CUDA 12.8 support – no separate CUDA toolkit installation  required.”
 
 ---
@@ -39,18 +39,46 @@ DeepSpeed will still work for all regular training and inference tasks.
 - 2.) **Python Environment**
   - Create Environment: `python -m venv env`
   - Activate Environment: `env\Scripts\activate`
-- 3.) **Pytorch 2.7.0+cu128**
-  - Install pytorch with pip:
+- 3.) **Pytorch 2.7.x+cu128 or 2.8.x+cu128**
+  - Install pytorch 2.7.0, pytorch 2.7.1 or pytorch 2.8.0 with pip:
   
-  ```bash
-  pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
-  ```
+    **pytorch 2.7.0**
+
+    ```bash
+    pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+    ```
+
+    **pytorch 2.7.1**
+
+    ```bash
+    pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+    ```
+
+    **pytorch 2.8.0**
+
+    ```bash
+    pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+    ```
 
   - Or install with uv:
   
-  ```bash
-  uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
-  ```
+    **pytorch 2.7.0**
+
+    ```bash
+    uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+    ```
+
+    **pytorch 2.7.1**
+
+    ```bash
+    uv pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+    ```
+
+    **pytorch 2.8.0**
+
+    ```bash
+    uv pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+    ```
 
 ---
 
@@ -61,25 +89,25 @@ Search the appropriate `.whl` file for your python version from the [Releases](h
 ### Install it with pip
 
 ```bash
-pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>-torch+cu128-cp<python version>‑cp<python version>‑win_amd64.whl
 ```
 
 **For Example:**
 
 ```bash
-pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch+cu128-cp310-cp310-win_amd64.whl
 ```
 
 ### Or install with uv
 
 ```bash
-uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑cp<pythonversion>‑cp<pythonversion>‑win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>-torch+cu128-<cuda version>-cp<python version>‑cp<python version>‑win_amd64.whl
 ```
 
 **For Example:**
 
 ```bash
-uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch+cu128-cp310-cp310-win_amd64.whl
 ```
 
 ### ⭐ Support
