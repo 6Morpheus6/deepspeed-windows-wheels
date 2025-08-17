@@ -89,7 +89,7 @@ Search the appropriate `.whl` file for your python version from the [Releases](h
 ### Install it with pip
 
 ```bash
-pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>-torch+cu128-cp<python version>‑cp<python version>‑win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>torch+cu128-cp<python version>‑cp<python version>‑win_amd64.whl
 ```
 
 **For Example:**
@@ -101,7 +101,7 @@ pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/down
 ### Or install with uv
 
 ```bash
-uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>-torch+cu128-<cuda version>-cp<python version>‑cp<python version>‑win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/<tag>deepspeed‑<version>‑<torch version>torch+cu128-cp<python version>‑cp<python version>‑win_amd64.whl
 ```
 
 **For Example:**
