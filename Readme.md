@@ -84,7 +84,7 @@ DeepSpeed will still work for all regular training and inference tasks.
 
 ## 📦 Installation
 
-Search the appropriate `.whl` file for your python version from the [Releases](https://github.com/6Morpheus6/deepspeed-windows-wheels/releases) page.
+Search the appropriate `.whl` file for your pytorch and python version from the [Releases](https://github.com/6Morpheus6/deepspeed-windows-wheels/releases) page.
 
 ### Install it with pip
 
