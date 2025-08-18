@@ -165,7 +165,7 @@ set DS_BUILD_RAGGED_DEVICE_OPS=0
 ```
 
 - Navigate into the DeepSpeed folder `cd DeepSpeed`
-- Compile DeepSpeed `setup.py bdist_wheel`
+- Compile DeepSpeed `python setup.py bdist_wheel`
 
 > The finished wheel can be found in `C:\MyProject\DeepSpeed\dist`
 
