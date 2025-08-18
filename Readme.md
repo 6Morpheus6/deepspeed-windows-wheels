@@ -110,6 +110,75 @@ uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/d
 uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch+cu128-cp310-cp310-win_amd64.whl
 ```
 
+### Build from source
+
+#### Prerequistits
+
+- Git
+- Python
+- Miniconda
+- NVIDIA Toolkit
+- VS Buildtools 2019
+
+#### Preparation
+
+- Open Anaconda Powershell in your Windows Start menu.
+- Create a new project folder `mkdir C:\MyProject`
+- Navigate to your project folder `cd C:\MyProject`
+- Create a python environment `python -m venv env`
+- Activate the environment `env\Scripts\activate`
+- Install torch, e.g.: `pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128`
+- Install build dependencies `pip install setuptools wheel ninja packaging py-cpuinfo psutil`
+- Optional: Install dependencies to test your wheel later on `pip install tqdm pydantic msgpack hjson einops`
+- Clone DeepSpeed `git clone https://github.com/deepspeedai/DeepSpeed`
+
+#### Compile
+
+- Open x64 Native Tools Command Prompt for VS 2019 in your Windows Start menu.
+- Navigate to your project folder `cd C:\MyProject`
+- Activate the environment `call env\Scripts\activate`
+- Make Windows SDK accessible `set DISTUTILS_USE_SDK=1`
+- Set CUDA_HOME (modify the path and toolkit version accordingly)  
+  `set CUDA_HOME=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8`
+- Add CUDA_HOME to PATH `set PATH=%CUDA_HOME%\bin;%PATH%`
+- If git is installed globally it is still accessible. If git is installed as library in conda,  
+  you need to make it accessible (modify the path accordingly)  
+  `set PATH=C:\Users<username>\AppData\Local\miniconda3\Library\bin;%PATH%`
+- Specify the architecture(s) you want to build the wheel for. E.g. if you want to build for all architectures:
+  `TORCH_CUDA_ARCH_LIST=6.1;7.5;8.6;8.9;12.0`  
+  or if you only want to build for RTX 40 series (Ada Lovelace):  
+  `TORCH_CUDA_ARCH_LIST=8.9`
+  - A full list of GPU's and their arch type (Compute capability) can be found here [https://en.wikipedia.org/wiki/CUDA](https://en.wikipedia.org/wiki/CUDA)
+- Set DeepSpeed environmet variables.
+
+```bash
+set DS_BUILD_OPS=1
+set DS_BUILD_GDS=0
+set DS_BUILD_AIO=0
+set DS_BUILD_CUTLASS_OPS=0
+set DS_BUILD_SPARSE_ATTN=0
+set DS_BUILD_SPARSE_UTILS=0
+set DS_BUILD_FP_QUANTIZER=0
+set DS_BUILD_DEEP_COMPILE=0
+set DS_BUILD_EVOFORMER_ATTN=0
+set DS_BUILD_RAGGED_DEVICE_OPS=0
+```
+
+- Navigate into the DeepSpeed folder `cd DeepSpeed`
+- Compile DeepSpeed `setup.py bdist_wheel`
+
+> The finished wheel can be found in `C:\MyProject\DeepSpeed\dist`
+
+#### Test the wheel
+
+- Install DeepSpeed into your environment (modify the name accordingly to match your wheel if necessary)  
+  `pip install .\dist\deepspeed-0.17.5+e1560d84-cp310-cp310-win_amd64.whl`
+- Print Report `python -m deepspeed.env_report`
+  
+#### Successful build
+
+![alt text](images/Deepspeed_Report.png)
+
 ### ⭐ Support
 
 If this project is useful to you, please consider giving it a ⭐ on GitHub!
