@@ -2,7 +2,7 @@
 
 Prebuilt **DeepSpeed** wheels for **Windows** with **NVIDIA GPU support**.  
 Supports **Python 3.9 – 3.12** and **GTX 10** - **RTX 50** series.
-Compiled with **pytorch 2.7, 2.8 and cuda 128**  
+Compiled with **pytorch 2.7, 2.8 and cuda 12.8**  
 > “The wheels already include CUDA 12.8 support – no separate CUDA toolkit installation  required.”
 
 ---
