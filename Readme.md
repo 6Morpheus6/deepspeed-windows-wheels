@@ -144,7 +144,7 @@ uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/d
 - If git is installed globally it is still accessible. If git is installed as library in conda,  
   you need to make it accessible (modify the path accordingly)  
   `set PATH=C:\Users<username>\AppData\Local\miniconda3\Library\bin;%PATH%`
-- Specify the architecture(s) you want to build the wheel for. E.g. if you want to build for all architectures:
+- Specify the architecture(s) you want to build the wheel for. E.g. if you want to build for all architectures:  
   `set TORCH_CUDA_ARCH_LIST=6.1;7.5;8.6;8.9;12.0`  
   or if you only want to build for RTX 40 series (Ada Lovelace):  
   `set TORCH_CUDA_ARCH_LIST=8.9`
