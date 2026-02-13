@@ -145,9 +145,9 @@ uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/d
   you need to make it accessible (modify the path accordingly)  
   `set PATH=C:\Users<username>\AppData\Local\miniconda3\Library\bin;%PATH%`
 - Specify the architecture(s) you want to build the wheel for. E.g. if you want to build for all architectures:
-  `TORCH_CUDA_ARCH_LIST=6.1;7.5;8.6;8.9;12.0`  
+  `set TORCH_CUDA_ARCH_LIST=6.1;7.5;8.6;8.9;12.0`  
   or if you only want to build for RTX 40 series (Ada Lovelace):  
-  `TORCH_CUDA_ARCH_LIST=8.9`
+  `set TORCH_CUDA_ARCH_LIST=8.9`
   - A full list of GPU's and their arch type (Compute capability) can be found here [https://en.wikipedia.org/wiki/CUDA](https://en.wikipedia.org/wiki/CUDA)
 - Set DeepSpeed environmet variables.
 
