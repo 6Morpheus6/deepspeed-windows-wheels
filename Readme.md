@@ -95,7 +95,7 @@ pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/down
 **For Example:**
 
 ```bash
-pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch+cu128-cp310-cp310-win_amd64.whl
+pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch_cu128-cp310-cp310-win_amd64.whl
 ```
 
 ### Or install with uv
@@ -107,7 +107,7 @@ uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/d
 **For Example:**
 
 ```bash
-uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch+cu128-cp310-cp310-win_amd64.whl
+uv pip install https://github.com/6Morpheus6/deepspeed-windows-wheels/releases/download/v0.17.5/deepspeed-0.17.5+e1560d84-2.7torch_cu128-cp310-cp310-win_amd64.whl
 ```
 
 ### Build from source
